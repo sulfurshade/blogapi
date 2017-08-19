@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <title>Book Search & Recommendations</title>
+    <meta name="description" content="Book Search Recommendations">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Book Search & Recommendations!
+      </h1>
+    </header>
+
+    <main role="main">
+      <p class="bold">Search books by name for product info, and receive similar recommendations!</p>
+      <form action="#" class="js-search-form">
+        <label for="query"></label>
+        <input type="text" placeholder="Type Here" id="js-search-input">
+        <button type="submit">Search</button>
+      </form>
+      
+      <div hidden id="js-results-box">
+        <h2 id="results-title">Results</h2>
+        <div class="js-search-results"></div>
+        <div class="js-recommend-results"></div>
+<!--         <button id="js-next-page">
+          Next Page
+        </button> -->
+      </div>
+      <div id="popup-modal" class="modal hidden">
+        <div class="modal-box right-modal">
+          <span id="close-feedback-modal" class="close-button">X</span>
+          <div class="js-recommend-section scroll">
+            <h2>
+              <a class="js-recommend-name modal-name" href="" target="_blank"></a>
+            </h2>
+            <br />
+<!--             <textarea rows="8" cols="50" class="js-recommend-info modal-text"></textarea> -->
+            <span class="js-recommend-info modal-text"></span>
+           </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
